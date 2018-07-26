@@ -1,0 +1,12 @@
+
+<div *ngIf="entries">
+
+<ul>
+  <li *ngFor="let entry of entries">
+
+  {{entry.title}}-
+  {{entry.date}}-
+  <a [routerLink]="[entry._id]"> Detail </a>
+  </li>
+</ul>
+</div>
